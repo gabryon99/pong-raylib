@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		5405182324391E3D0086BCF2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5405182224391E3D0086BCF2 /* main.c */; };
+		5405182F24391ED30086BCF2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5405182E24391ED30086BCF2 /* OpenGL.framework */; };
+		5405183124391F210086BCF2 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5405183024391F210086BCF2 /* CoreVideo.framework */; };
+		5405183324391F280086BCF2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5405183224391F280086BCF2 /* IOKit.framework */; };
+		5405183524391F2E0086BCF2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5405183424391F2E0086BCF2 /* Cocoa.framework */; };
+		540518372439240D0086BCF2 /* libraylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540518362439240D0086BCF2 /* libraylib.a */; };
+		5405183A243926510086BCF2 /* paddle.c in Sources */ = {isa = PBXBuildFile; fileRef = 54051839243926510086BCF2 /* paddle.c */; };
+		5405183D24392D390086BCF2 /* ball.c in Sources */ = {isa = PBXBuildFile; fileRef = 5405183C24392D390086BCF2 /* ball.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,18 @@
 /* Begin PBXFileReference section */
 		5405181F24391E3D0086BCF2 /* raylib-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "raylib-test"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5405182224391E3D0086BCF2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5405182A24391EA80086BCF2 /* raylib-3.0.0-macOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "raylib-3.0.0-macOS"; path = "../../../Downloads/raylib-3.0.0-macOS"; sourceTree = "<group>"; };
+		5405182C24391ECB0086BCF2 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = "../../../Downloads/raylib-3.0.0-macOS/lib/libraylib.a"; sourceTree = "<group>"; };
+		5405182E24391ED30086BCF2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		5405183024391F210086BCF2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		5405183224391F280086BCF2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		5405183424391F2E0086BCF2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		540518362439240D0086BCF2 /* libraylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libraylib.a; path = ../../../Downloads/repos/raylib/src/libraylib.a; sourceTree = "<group>"; };
+		54051838243925B90086BCF2 /* paddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = paddle.h; sourceTree = "<group>"; };
+		54051839243926510086BCF2 /* paddle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = paddle.c; sourceTree = "<group>"; };
+		5405183B24392D390086BCF2 /* ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ball.h; sourceTree = "<group>"; };
+		5405183C24392D390086BCF2 /* ball.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ball.c; sourceTree = "<group>"; };
+		5405183E24392F950086BCF2 /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540518372439240D0086BCF2 /* libraylib.a in Frameworks */,
+				5405183524391F2E0086BCF2 /* Cocoa.framework in Frameworks */,
+				5405183324391F280086BCF2 /* IOKit.framework in Frameworks */,
+				5405183124391F210086BCF2 /* CoreVideo.framework in Frameworks */,
+				5405182F24391ED30086BCF2 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +67,7 @@
 			children = (
 				5405182124391E3D0086BCF2 /* raylib-test */,
 				5405182024391E3D0086BCF2 /* Products */,
+				5405182924391EA80086BCF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +83,27 @@
 			isa = PBXGroup;
 			children = (
 				5405182224391E3D0086BCF2 /* main.c */,
+				54051838243925B90086BCF2 /* paddle.h */,
+				54051839243926510086BCF2 /* paddle.c */,
+				5405183B24392D390086BCF2 /* ball.h */,
+				5405183C24392D390086BCF2 /* ball.c */,
+				5405183E24392F950086BCF2 /* game.h */,
 			);
 			path = "raylib-test";
+			sourceTree = "<group>";
+		};
+		5405182924391EA80086BCF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540518362439240D0086BCF2 /* libraylib.a */,
+				5405183424391F2E0086BCF2 /* Cocoa.framework */,
+				5405183224391F280086BCF2 /* IOKit.framework */,
+				5405183024391F210086BCF2 /* CoreVideo.framework */,
+				5405182E24391ED30086BCF2 /* OpenGL.framework */,
+				5405182C24391ECB0086BCF2 /* libraylib.a */,
+				5405182A24391EA80086BCF2 /* raylib-3.0.0-macOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5405182324391E3D0086BCF2 /* main.c in Sources */,
+				5405183A243926510086BCF2 /* paddle.c in Sources */,
+				5405183D24392D390086BCF2 /* ball.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +285,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "/Users/gabryon/Downloads/repos/raylib/src/**";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "/Users/gabryon/Downloads/repos/raylib/src/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
